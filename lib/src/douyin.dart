@@ -182,26 +182,26 @@ class Douyin {
     );
   }
 
-  // /// TODO: 没有相关限制信息
-  // Future<void> shareMicroApp({
-  //   String id,
-  //   String title,
-  //   String url,
-  //   String description,
-  //   String state,
-  // }) {
-  //   assert(id?.isNotEmpty ?? false);
-  //   return _channel.invokeMethod<void>(
-  //     'shareMicroApp',
-  //     <String, dynamic>{
-  //       'id': id,
-  //       'title': title,
-  //       'url': url,
-  //       'description': description,
-  //       if (state != null) 'state': state,
-  //     },
-  //   );
-  // }
+   /// TODO: 没有相关限制信息
+   Future<void> shareMicroApp({
+     String id,
+     String title,
+     String url,
+     String description,
+     String state,
+   }) {
+     assert(id?.isNotEmpty ?? false);
+     return _channel.invokeMethod<void>(
+       'shareMicroApp',
+       <String, dynamic>{
+         'id': id,
+         'title': title,
+         'url': url,
+         'description': description,
+         if (state != null) 'state': state,
+       },
+     );
+   }
 
   ///
   Future<void> shareHashTags({
